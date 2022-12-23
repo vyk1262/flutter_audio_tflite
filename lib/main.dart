@@ -31,8 +31,10 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     super.initState();
     TfliteAudio.loadModel(
-        model: 'assets/soundclassifier.tflite',
-        label: 'assets/labels.txt',
+        // model: 'assets/soundclassifier.tflite',
+        model: 'assets/mytm.tflite',
+        // label: 'assets/soundclassifier.txt',
+        label: 'assets/mytmlabels.txt',
         numThreads: 1,
         isAsset: true);
   }
